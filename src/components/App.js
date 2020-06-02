@@ -1,5 +1,12 @@
 import React from 'react';
 import '../stylesheets/App.css';
+import { Link, Route, Switch } from 'react-router-dom';
+import Footer from './Footer';
+import Frontworks from './Frontworks';
+import Commsworks from './Commsworks';
+import Cv from './CV';
+import Contact from './Contact';
+import Menu from './Menu';
 
 function App() {
   return (
@@ -8,16 +15,13 @@ function App() {
         <h1>Portfolio de Eva López Merino</h1>
       </header>
       <main>
-        <nav>
-          <button>Trabajos FrontEnd</button>
-          <button>Trabajos comunicación</button>
-          <button>Mi CV / Mi historia</button>
-          <button>Contacto</button>
-        </nav>
+        <Menu></Menu>
+        <Frontworks></Frontworks>
+        <Commsworks></Commsworks>
+        <Cv></Cv>
+        <Contact></Contact>
       </main>
-      <footer>
-        <small>Copyright Eva López Merino</small>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }
